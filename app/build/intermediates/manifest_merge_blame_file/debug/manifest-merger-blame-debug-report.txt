@@ -1,0 +1,118 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="es.joseljg.estudiantesmvc"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:5:22-64
+12
+13    <application
+13-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:7:5-44:19
+14        android:allowBackup="true"
+14-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:8:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.7.0] C:\Users\Administrador\.gradle\caches\transforms-3\02483169c4c9e0ddffa88758188ac6f1\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:9:9-43
+18        android:label="@string/app_name"
+18-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:10:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:11:9-54
+20        android:supportsRtl="true"
+20-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:12:9-35
+21        android:testOnly="true"
+22        android:theme="@style/Theme.EstudiantesMVC" >
+22-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:13:9-52
+23        <activity
+23-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:14:9-16:40
+24            android:name="es.joseljg.estudiantesmvc.activities.Actualizar_curso_Activity2"
+24-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:15:13-66
+25            android:exported="false" />
+25-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:16:13-37
+26        <activity
+26-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:17:9-19:40
+27            android:name="es.joseljg.estudiantesmvc.activities.Actualizar_Curso_Activity1"
+27-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:18:13-66
+28            android:exported="false" />
+28-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:19:13-37
+29        <activity
+29-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:20:9-22:40
+30            android:name="es.joseljg.estudiantesmvc.activities.BorrarCursoActivity"
+30-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:21:13-59
+31            android:exported="false" />
+31-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:22:13-37
+32        <activity
+32-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:23:9-25:40
+33            android:name="es.joseljg.estudiantesmvc.activities.MostrarDetallesCursoActivity"
+33-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:24:13-68
+34            android:exported="false" />
+34-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:25:13-37
+35        <activity
+35-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:26:9-28:40
+36            android:name="es.joseljg.estudiantesmvc.activities.MostrarCursoActivity"
+36-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:27:13-60
+37            android:exported="false" />
+37-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:28:13-37
+38        <activity
+38-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:29:9-31:40
+39            android:name="es.joseljg.estudiantesmvc.activities.NuevoCursoActivity"
+39-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:30:13-58
+40            android:exported="false" />
+40-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:31:13-37
+41        <activity
+41-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:32:9-34:40
+42            android:name="es.joseljg.estudiantesmvc.activities.GestionCursoActivity"
+42-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:33:13-60
+43            android:exported="false" />
+43-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:34:13-37
+44        <activity
+44-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:35:9-43:20
+45            android:name="es.joseljg.estudiantesmvc.activities.MainActivity"
+45-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:36:13-52
+46            android:exported="true" >
+46-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:37:13-36
+47            <intent-filter>
+47-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:38:13-42:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:39:17-69
+48-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:39:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:41:17-77
+50-->C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:41:27-74
+51            </intent-filter>
+52        </activity>
+53
+54        <provider
+54-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Administrador\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+55            android:name="androidx.startup.InitializationProvider"
+55-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Administrador\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+56            android:authorities="es.joseljg.estudiantesmvc.androidx-startup"
+56-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Administrador\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+57            android:exported="false" >
+57-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Administrador\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+58            <meta-data
+58-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Administrador\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+59                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+59-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Administrador\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+60                android:value="androidx.startup" />
+60-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Administrador\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+61            <meta-data
+61-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Administrador\.gradle\caches\transforms-3\e2a4092d19f5ec1c3a53b27f970ef211\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+62                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+62-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Administrador\.gradle\caches\transforms-3\e2a4092d19f5ec1c3a53b27f970ef211\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+63                android:value="androidx.startup" />
+63-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Administrador\.gradle\caches\transforms-3\e2a4092d19f5ec1c3a53b27f970ef211\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+64        </provider>
+65    </application>
+66
+67</manifest>
