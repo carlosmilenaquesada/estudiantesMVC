@@ -11,10 +11,10 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
 import es.joseljg.estudiantesmvc.clases.Juego;
-import es.joseljg.estudiantesmvc.tareas.TareaActualizarJuego;
-import es.joseljg.estudiantesmvc.tareas.TareaBorrarJuego;
-import es.joseljg.estudiantesmvc.tareas.TareaInsertarJuego;
-import es.joseljg.estudiantesmvc.tareas.TareaObtenerJuegos;
+import es.joseljg.estudiantesmvc.tareas.juegos.TareaActualizarJuego;
+import es.joseljg.estudiantesmvc.tareas.juegos.TareaBorrarJuego;
+import es.joseljg.estudiantesmvc.tareas.juegos.TareaInsertarJuego;
+import es.joseljg.estudiantesmvc.tareas.juegos.TareaObtenerJuegos;
 
 public class JuegoController{
 

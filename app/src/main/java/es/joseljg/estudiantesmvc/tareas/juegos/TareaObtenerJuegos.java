@@ -1,4 +1,4 @@
-package es.joseljg.estudiantesmvc.tareas;
+package es.joseljg.estudiantesmvc.tareas.juegos;
 
 import java.util.ArrayList;
 import java.util.concurrent.Callable;
