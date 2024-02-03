@@ -67,7 +67,9 @@ public class ModificarJuegoActivity extends AppCompatActivity implements Adapter
 		ivModificarImagen = (ImageView) findViewById(R.id.ivModificarJuegoImagen);
 		Intent intent = getIntent();
 		if(intent != null){
-			juego = (Juego) intent.getSerializableExtra(JuegoViewHolder.EXTRA_MODIFICAR_JUEGO);
+			juego = (Juego) intent.getParcelableExtra(JuegoViewHolder.EXTRA_MODIFICAR_JUEGO);
+			System.out.println("mi juego"+ juego);
+
 			byte[] fotobinaria =
 					(byte[]) intent.getByteArrayExtra(JuegoViewHolder.EXTRA_MODIFICAR_IMAGEN);
 			Bitmap fotobitmap = ImagenesBlobBitmap.bytes_to_bitmap(fotobinaria, 500, 500);

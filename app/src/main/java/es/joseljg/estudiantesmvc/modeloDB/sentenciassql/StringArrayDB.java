@@ -3,9 +3,9 @@ package es.joseljg.estudiantesmvc.modeloDB.sentenciassql;
 import android.util.Log;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 
 import es.joseljg.estudiantesmvc.modeloDB.conexion.ConfiguracionDB;
@@ -25,19 +25,19 @@ public class StringArrayDB{
 		}
 		ArrayList<String> elementos = new ArrayList<String>();
 		try{
-			Statement sentencia = conexion.createStatement();
-			String ordenSQL =
-					"SELECT '" + columna + "' FROM '" + tabla + "' ORDER BY '" + columna + "'";
-			ResultSet resultado = sentencia.executeQuery(ordenSQL);
+			String ordenSQL = "SELECT * FROM " + tabla + " ORDER BY ? ASC;";
+			PreparedStatement pst = conexion.prepareStatement(ordenSQL);
+			pst.setString(1, columna);
+			ResultSet resultado = pst.executeQuery();
 			while(resultado.next()){
 				elementos.add(resultado.getString(columna));
 			}
 			resultado.close();
-			sentencia.close();
+			pst.close();
 			conexion.close();
 			return elementos;
 		}catch(SQLException e){
-			Log.i("sql", "error sql");
+			Log.i("sqla", "error sqla" + e.getMessage());
 			return null;
 		}
 	}

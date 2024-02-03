@@ -19,18 +19,17 @@ public class ImagenDB{
 		}
 		Imagen imagen =null;
 		try{
-			Statement sentencia = conexion.createStatement();
 			String ordenSQL = "SELECT * FROM carlosmilena_imagenes WHERE (`idimagen` = ?);";
 			PreparedStatement pst = conexion.prepareStatement(ordenSQL);
 			pst.setString(1, idDeLaImagen);
-			ResultSet resultado = sentencia.executeQuery(ordenSQL);
+			ResultSet resultado = pst.executeQuery();
 			if(resultado.next()){
 				String idImagen = resultado.getString("idimagen");
 				String imagenEnBlob = resultado.getString("imagen");
 				imagen = new Imagen(idImagen, imagenEnBlob);
 			}
 			resultado.close();
-			sentencia.close();
+			pst.close();
 			conexion.close();
 			return imagen;
 		}catch(SQLException e){

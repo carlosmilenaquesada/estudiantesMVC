@@ -1,4 +1,4 @@
-#Sat Feb 03 06:50:45 CET 2024
+#Sat Feb 03 17:02:50 CET 2024
 base.0=C\:\\Users\\Administrador\\Desktop\\JDBC\\PROFESORJDBC\\estudiantesMVC\\estudiantesMVC\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\Administrador\\Desktop\\JDBC\\PROFESORJDBC\\estudiantesMVC\\estudiantesMVC\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\Administrador\\Desktop\\JDBC\\PROFESORJDBC\\estudiantesMVC\\estudiantesMVC\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex

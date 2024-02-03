@@ -22,7 +22,7 @@ public class JuegoDB{
 		ArrayList<Juego> juegos = new ArrayList<>();
 		try{
 			Statement sentencia = conexion.createStatement();
-			String ordenSQL = "SELECT * FROM carlosmilena_juegos ORDER BY identificador";
+			String ordenSQL = "SELECT * FROM carlosmilena_juegos ORDER BY CONVERT(identificador, SIGNED);";
 			ResultSet resultado = sentencia.executeQuery(ordenSQL);
 			while(resultado.next()){
 				String identificador = resultado.getString("identificador");
