@@ -1,4 +1,4 @@
-package es.joseljg.estudiantesmvc.modelo;
+package es.joseljg.estudiantesmvc.modeloDB.sentenciassql;
 
 import android.util.Log;
 
@@ -10,6 +10,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 import es.joseljg.estudiantesmvc.clases.Juego;
+import es.joseljg.estudiantesmvc.modeloDB.conexion.ConfiguracionDB;
 
 public class JuegoDB{
 	//-------------------------------------------------------------------------------
@@ -21,7 +22,7 @@ public class JuegoDB{
 		ArrayList<Juego> juegos = new ArrayList<Juego>();
 		try{
 			Statement sentencia = conexion.createStatement();
-			String ordenSQL = "SELECT * FROM carlosmilena_juegos ORDER BY carlosmilena_juegos";
+			String ordenSQL = "SELECT * FROM carlosmilena_juegos ORDER BY identificador";
 			ResultSet resultado = sentencia.executeQuery(ordenSQL);
 			while(resultado.next()){
 				String identificador = resultado.getString("identificador");

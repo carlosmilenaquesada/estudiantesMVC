@@ -2,7 +2,7 @@ package es.joseljg.estudiantesmvc.tareas.juegos;
 
 import java.util.concurrent.Callable;
 
-import es.joseljg.estudiantesmvc.modelo.JuegoDB;
+import es.joseljg.estudiantesmvc.modeloDB.sentenciassql.JuegoDB;
 
 public class TareaBorrarJuego implements Callable<Boolean>{
 	private String idJuego = null;

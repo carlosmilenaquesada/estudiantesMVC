@@ -2,7 +2,7 @@ package es.joseljg.estudiantesmvc.tareas.imagenes;
 
 import java.util.concurrent.Callable;
 
-import es.joseljg.estudiantesmvc.modelo.ImagenDB;
+import es.joseljg.estudiantesmvc.modeloDB.sentenciassql.ImagenDB;
 
 public class TareaBorrarImagen implements Callable<Boolean>{
 	private String idImagen = null;

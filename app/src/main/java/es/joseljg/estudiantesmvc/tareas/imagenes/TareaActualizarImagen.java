@@ -3,7 +3,7 @@ package es.joseljg.estudiantesmvc.tareas.imagenes;
 import java.util.concurrent.Callable;
 
 import es.joseljg.estudiantesmvc.clases.Imagen;
-import es.joseljg.estudiantesmvc.modelo.ImagenDB;
+import es.joseljg.estudiantesmvc.modeloDB.sentenciassql.ImagenDB;
 
 public class TareaActualizarImagen implements Callable<Boolean>{
 	private Imagen imagenNew = null;

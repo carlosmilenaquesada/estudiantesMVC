@@ -10,15 +10,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5568748-2f46-4358-a536-0e3dadf976af" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/clases/Imagen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/controladores/ImagenController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/modelo/ImagenDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/imagenes/TareaActualizarImagen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/imagenes/TareaBorrarImagen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/imagenes/TareaInsertarImagen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/imagenes/TareaObtenerImagen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/controladores/StringArrayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/modeloDB/sentenciassql/StringArrayDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/arraystring/TareaObtenerArrayString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/modelo/JuegoDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/modelo/JuegoDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/modelo/ConfiguracionDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/modeloDB/conexion/ConfiguracionDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/modelo/ImagenDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/modeloDB/sentenciassql/ImagenDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/modelo/JuegoDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/modeloDB/sentenciassql/JuegoDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/modelo/UsuarioDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/modeloDB/sentenciassql/UsuarioDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/imagenes/TareaActualizarImagen.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/imagenes/TareaActualizarImagen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/imagenes/TareaBorrarImagen.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/imagenes/TareaBorrarImagen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/imagenes/TareaInsertarImagen.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/imagenes/TareaInsertarImagen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/imagenes/TareaObtenerImagen.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/imagenes/TareaObtenerImagen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/juegos/TareaActualizarJuego.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/juegos/TareaActualizarJuego.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/juegos/TareaBorrarJuego.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/juegos/TareaBorrarJuego.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/juegos/TareaInsertarJuego.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/juegos/TareaInsertarJuego.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/juegos/TareaObtenerJuegos.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/juegos/TareaObtenerJuegos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/usuarios/TareaInsertarUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/usuarios/TareaInsertarUsuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/usuarios/TareaObtenerUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/usuarios/TareaObtenerUsuario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

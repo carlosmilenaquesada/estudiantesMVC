@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.concurrent.Callable;
 
 import es.joseljg.estudiantesmvc.clases.Juego;
-import es.joseljg.estudiantesmvc.modelo.JuegoDB;
+import es.joseljg.estudiantesmvc.modeloDB.sentenciassql.JuegoDB;
 
 public class TareaObtenerJuegos implements Callable<ArrayList<Juego>>{
 	@Override

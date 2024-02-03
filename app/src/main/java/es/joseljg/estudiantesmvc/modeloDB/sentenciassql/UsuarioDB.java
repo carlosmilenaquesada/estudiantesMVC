@@ -1,4 +1,4 @@
-package es.joseljg.estudiantesmvc.modelo;
+package es.joseljg.estudiantesmvc.modeloDB.sentenciassql;
 
 import android.util.Log;
 
@@ -9,6 +9,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import es.joseljg.estudiantesmvc.clases.Usuario;
+import es.joseljg.estudiantesmvc.modeloDB.conexion.ConfiguracionDB;
 
 public class UsuarioDB{
 	public static Usuario obtenerUsuario(String emailUsuario){

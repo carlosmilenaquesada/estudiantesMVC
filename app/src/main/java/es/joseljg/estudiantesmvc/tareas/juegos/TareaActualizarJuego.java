@@ -3,7 +3,7 @@ package es.joseljg.estudiantesmvc.tareas.juegos;
 import java.util.concurrent.Callable;
 
 import es.joseljg.estudiantesmvc.clases.Juego;
-import es.joseljg.estudiantesmvc.modelo.JuegoDB;
+import es.joseljg.estudiantesmvc.modeloDB.sentenciassql.JuegoDB;
 
 
 public class TareaActualizarJuego implements Callable<Boolean> {

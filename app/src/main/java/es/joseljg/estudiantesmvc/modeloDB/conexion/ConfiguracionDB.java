@@ -1,4 +1,4 @@
-package es.joseljg.estudiantesmvc.modelo;
+package es.joseljg.estudiantesmvc.modeloDB.conexion;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
