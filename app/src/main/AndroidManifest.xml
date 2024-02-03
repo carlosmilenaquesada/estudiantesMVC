@@ -12,28 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EstudiantesMVC">
         <activity
-            android:name=".activities.Actualizar_curso_Activity2"
+            android:name=".activities.vistas.CrearCuentaActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.Actualizar_Curso_Activity1"
+            android:name=".activities.vistas.AgregarNuevoJuegoActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.BorrarCursoActivity"
+            android:name=".activities.vistas.MenuGeneralActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.MostrarDetallesCursoActivity"
+            android:name=".activities.vistas.ModificarJuegoActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.MostrarCursoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activities.NuevoCursoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activities.GestionCursoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activities.MainActivity"
+            android:name=".activities.vistas.AutenticacionActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

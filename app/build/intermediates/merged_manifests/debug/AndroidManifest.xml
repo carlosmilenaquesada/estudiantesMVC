@@ -21,28 +21,16 @@
         android:testOnly="true"
         android:theme="@style/Theme.EstudiantesMVC" >
         <activity
-            android:name="es.joseljg.estudiantesmvc.activities.Actualizar_curso_Activity2"
+            android:name="es.joseljg.estudiantesmvc.activities.vistas.CrearCuentaActivity"
             android:exported="false" />
         <activity
-            android:name="es.joseljg.estudiantesmvc.activities.Actualizar_Curso_Activity1"
+            android:name="es.joseljg.estudiantesmvc.activities.vistas.AgregarNuevoJuegoActivity"
             android:exported="false" />
         <activity
-            android:name="es.joseljg.estudiantesmvc.activities.BorrarCursoActivity"
+            android:name="es.joseljg.estudiantesmvc.activities.vistas.MenuGeneralActivity"
             android:exported="false" />
         <activity
-            android:name="es.joseljg.estudiantesmvc.activities.MostrarDetallesCursoActivity"
-            android:exported="false" />
-        <activity
-            android:name="es.joseljg.estudiantesmvc.activities.MostrarCursoActivity"
-            android:exported="false" />
-        <activity
-            android:name="es.joseljg.estudiantesmvc.activities.NuevoCursoActivity"
-            android:exported="false" />
-        <activity
-            android:name="es.joseljg.estudiantesmvc.activities.GestionCursoActivity"
-            android:exported="false" />
-        <activity
-            android:name="es.joseljg.estudiantesmvc.activities.MainActivity"
+            android:name="es.joseljg.estudiantesmvc.activities.vistas.AutenticacionActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:2:1-46:12
+ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:2:1-34:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\Administrador\.gradle\caches\transforms-3\46711a511d3e1cd7acb3e23e0cab2c15\transformed\material-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.2] C:\Users\Administrador\.gradle\caches\transforms-3\21fdbeb2425ae0dec0cb65f6466befd8\transformed\constraintlayout-2.1.2\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.4.0] C:\Users\Administrador\.gradle\caches\transforms-3\5de9c35fd348c441004ff81cf06636bb\transformed\appcompat-1.4.0\AndroidManifest.xml:17:1-24:12
@@ -43,20 +43,20 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Administrador\.g
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Administrador\.gradle\caches\transforms-3\9f24011717b021bac9ee09874fd0df37\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Administrador\.gradle\caches\transforms-3\6abfac59d263b6c8870828beb848f440\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Administrador\.gradle\caches\transforms-3\edea9ed16d3a7cf99d1134cab402d589\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:2:1-34:12
 	package
 		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:3:5-40
 		INJECTED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:2:1-46:12
+		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:2:1-34:12
 		INJECTED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:2:1-46:12
+		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:2:1-34:12
 		INJECTED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:2:11-69
@@ -65,7 +65,7 @@ ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estud
 	android:name
 		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:7:5-44:19
+ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:7:5-32:19
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\Administrador\.gradle\caches\transforms-3\46711a511d3e1cd7acb3e23e0cab2c15\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\Administrador\.gradle\caches\transforms-3\46711a511d3e1cd7acb3e23e0cab2c15\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.2] C:\Users\Administrador\.gradle\caches\transforms-3\21fdbeb2425ae0dec0cb65f6466befd8\transformed\constraintlayout-2.1.2\AndroidManifest.xml:9:5-20
@@ -94,64 +94,40 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\Administrador\.gra
 		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
 		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:13:9-52
-activity#es.joseljg.estudiantesmvc.activities.Actualizar_curso_Activity2
+activity#es.joseljg.estudiantesmvc.activities.vistas.CrearCuentaActivity
 ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:14:9-16:40
 	android:exported
 		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:16:13-37
 	android:name
 		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:15:13-66
-activity#es.joseljg.estudiantesmvc.activities.Actualizar_Curso_Activity1
+activity#es.joseljg.estudiantesmvc.activities.vistas.AgregarNuevoJuegoActivity
 ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:17:9-19:40
 	android:exported
 		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:19:13-37
 	android:name
-		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:18:13-66
-activity#es.joseljg.estudiantesmvc.activities.BorrarCursoActivity
+		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:18:13-72
+activity#es.joseljg.estudiantesmvc.activities.vistas.MenuGeneralActivity
 ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:20:9-22:40
 	android:exported
 		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:21:13-59
-activity#es.joseljg.estudiantesmvc.activities.MostrarDetallesCursoActivity
-ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:23:9-25:40
+		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:21:13-66
+activity#es.joseljg.estudiantesmvc.activities.vistas.AutenticacionActivity
+ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:23:9-31:20
 	android:exported
-		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:25:13-37
+		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:25:13-36
 	android:name
 		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:24:13-68
-activity#es.joseljg.estudiantesmvc.activities.MostrarCursoActivity
-ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:26:9-28:40
-	android:exported
-		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:28:13-37
-	android:name
-		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:27:13-60
-activity#es.joseljg.estudiantesmvc.activities.NuevoCursoActivity
-ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:29:9-31:40
-	android:exported
-		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:31:13-37
-	android:name
-		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:30:13-58
-activity#es.joseljg.estudiantesmvc.activities.GestionCursoActivity
-ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:32:9-34:40
-	android:exported
-		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:34:13-37
-	android:name
-		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:33:13-60
-activity#es.joseljg.estudiantesmvc.activities.MainActivity
-ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:35:9-43:20
-	android:exported
-		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:37:13-36
-	android:name
-		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:36:13-52
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:38:13-42:29
+ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:26:13-30:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:39:17-69
+ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:27:17-69
 	android:name
-		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:39:25-66
+		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:27:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:41:17-77
+ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:29:17-77
 	android:name
-		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:41:27-74
+		ADDED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml:29:27-74
 uses-sdk
 INJECTED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Administrador\Desktop\JDBC\PROFESORJDBC\estudiantesMVC\estudiantesMVC\app\src\main\AndroidManifest.xml

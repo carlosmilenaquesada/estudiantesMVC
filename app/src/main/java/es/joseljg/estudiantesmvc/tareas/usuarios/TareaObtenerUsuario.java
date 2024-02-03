@@ -7,14 +7,16 @@ import es.joseljg.estudiantesmvc.modeloDB.sentenciassql.UsuarioDB;
 
 public class TareaObtenerUsuario implements Callable<Usuario>{
 	private String email;
+	private String password;
 
-	public TareaObtenerUsuario(String email){
+	public TareaObtenerUsuario(String email, String password){
 		this.email = email;
+		this.password = password;
 	}
 
 	@Override
 	public Usuario call() throws Exception{
-		Usuario usuario = UsuarioDB.obtenerUsuario(email);
+		Usuario usuario = UsuarioDB.obtenerUsuario(email, password);
 		return usuario;
 	}
 }

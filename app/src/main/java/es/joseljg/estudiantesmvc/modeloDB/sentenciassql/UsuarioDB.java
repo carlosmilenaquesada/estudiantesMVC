@@ -12,17 +12,18 @@ import es.joseljg.estudiantesmvc.clases.Usuario;
 import es.joseljg.estudiantesmvc.modeloDB.conexion.ConfiguracionDB;
 
 public class UsuarioDB{
-	public static Usuario obtenerUsuario(String emailUsuario){
+	public static Usuario obtenerUsuario(String emailUsuario, String passwordUsuario){
 		Connection conexion = ConfiguracionDB.conectarConBaseDeDatos();
 		if(conexion == null){
 			return null;
 		}
-		Usuario usuario = new Usuario();
+		Usuario usuario = null;
 		try{
 			Statement sentencia = conexion.createStatement();
-			String ordenSQL = "SELECT * FROM carlosmilena_usuarios WHERE (`email` = ?);";
+			String ordenSQL = "SELECT * FROM carlosmilena_usuarios WHERE ('email' = ?  AND 'password' = ?);";
 			PreparedStatement pst = conexion.prepareStatement(ordenSQL);
 			pst.setString(1, emailUsuario);
+			pst.setString(2, passwordUsuario);
 			ResultSet resultado = sentencia.executeQuery(ordenSQL);
 			if(resultado.next()){
 				String email = resultado.getString("email");

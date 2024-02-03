@@ -16,9 +16,9 @@ import es.joseljg.estudiantesmvc.tareas.usuarios.TareaInsertarUsuario;
 import es.joseljg.estudiantesmvc.tareas.usuarios.TareaObtenerUsuario;
 
 public class UsuarioController{
-	public static Usuario obtenerUsuarioController(String email){
+	public static Usuario obtenerUsuarioController(String email, String password){
 		Usuario usuario = null;
-		FutureTask t = new FutureTask(new TareaObtenerUsuario(email));
+		FutureTask t = new FutureTask(new TareaObtenerUsuario(email, password));
 		ExecutorService es = Executors.newSingleThreadExecutor();
 		es.submit(t);
 		try{
