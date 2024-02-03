@@ -10,18 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5568748-2f46-4358-a536-0e3dadf976af" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/clases/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/controladores/UsuarioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/modelo/UsuarioDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/usuarios/TareaInsertarUsuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/usuarios/TareaObtenerUsuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/clases/Imagen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/controladores/ImagenController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/modelo/ImagenDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/imagenes/TareaActualizarImagen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/imagenes/TareaBorrarImagen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/imagenes/TareaInsertarImagen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/imagenes/TareaObtenerImagen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/controladores/JuegoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/controladores/JuegoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/controladores/ProvinciaController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/TareaActualizarJuego.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/juegos/TareaActualizarJuego.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/TareaBorrarJuego.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/juegos/TareaBorrarJuego.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/TareaInsertarJuego.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/juegos/TareaInsertarJuego.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/TareaObtenerJuegos.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/tareas/juegos/TareaObtenerJuegos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/modelo/JuegoDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/modelo/JuegoDB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,18 +49,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/Administrador/Desktop/JDBC/PROFESORJDBC/estudiantesMVC/estudiantesMVC",
-    "project.structure.last.edited": "Suggestions",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrador/Desktop/JDBC/PROFESORJDBC/estudiantesMVC/estudiantesMVC&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Suggestions&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="PsdUISettings">
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
@@ -153,5 +150,16 @@
       <updated>1704990484669</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/es/joseljg/estudiantesmvc/controladores/JuegoController.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

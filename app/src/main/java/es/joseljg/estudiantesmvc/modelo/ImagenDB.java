@@ -7,57 +7,48 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
 
-import es.joseljg.estudiantesmvc.clases.Juego;
+import es.joseljg.estudiantesmvc.clases.Imagen;
 
-public class JuegoDB{
-	//-------------------------------------------------------------------------------
-	public static ArrayList<Juego> obtenerJuegos(){
+public class ImagenDB{
+	public static Imagen obtenerImagen(String idDeLaImagen){
 		Connection conexion = ConfiguracionDB.conectarConBaseDeDatos();
 		if(conexion == null){
 			return null;
 		}
-		ArrayList<Juego> juegos = new ArrayList<Juego>();
+		Imagen imagen = new Imagen();
 		try{
 			Statement sentencia = conexion.createStatement();
-			String ordenSQL = "SELECT * FROM carlosmilena_juegos ORDER BY carlosmilena_juegos";
+			String ordenSQL = "SELECT * FROM carlosmilena_imagenes WHERE (`idimagen` = ?);";
+			PreparedStatement pst = conexion.prepareStatement(ordenSQL);
+			pst.setString(1, idDeLaImagen);
 			ResultSet resultado = sentencia.executeQuery(ordenSQL);
-			while(resultado.next()){
-				String identificador = resultado.getString("identificador");
-				String plataforma = resultado.getString("plataforma");
-				String nombreJuego = resultado.getString("nombrejuego");
-				String genero = resultado.getString("genero");
-				double precioJuego = resultado.getDouble("preciojuego");
-				Juego juego = new Juego(identificador, plataforma, nombreJuego, genero,
-						precioJuego);
-				juegos.add(juego);
+			if(resultado.next()){
+				String idImagen = resultado.getString("idimagen");
+				String imagenEnBlob = resultado.getString("imagen");
+				imagen = new Imagen(idImagen, imagenEnBlob);
 			}
 			resultado.close();
 			sentencia.close();
 			conexion.close();
-			return juegos;
+			return imagen;
 		}catch(SQLException e){
 			Log.i("sql", "error sql");
-			return juegos;
+			return imagen;
 		}
 	}
 
 	//-------------------------------------------------------------------------------
-	public static boolean guardarJuego(Juego juego){
+	public static boolean guardarImagen(Imagen imagen){
 		Connection conexion = ConfiguracionDB.conectarConBaseDeDatos();
 		if(conexion == null){
 			return false;
 		}
 		try{
-			String ordensql = "INSERT INTO carlosmilena_juegos (identificador,plataforma," +
-							  "nombrejuego,genero,preciojuego) values (?,?,?,?,?);";
+			String ordensql = "INSERT INTO carlosmilena_imagenes (idimagen,imagen) values (?,?);";
 			PreparedStatement pst = conexion.prepareStatement(ordensql);
-			pst.setString(1, juego.getIdentificador());
-			pst.setString(2, juego.getPlataforma());
-			pst.setString(3, juego.getNombreJuego());
-			pst.setString(4, juego.getGenero());
-			pst.setDouble(5, juego.getPrecioJuego());
+			pst.setString(1, imagen.getIdImagen());
+			pst.setString(2, imagen.getImagenEnBlob());
 			int filasafectadas = pst.executeUpdate();
 			pst.close();
 			conexion.close();
@@ -72,15 +63,15 @@ public class JuegoDB{
 	}
 
 	//------------------------------------------------------------
-	public static boolean borrarJuego(String idJuego){
+	public static boolean borrarImagen(String idDeLaImagen){
 		Connection conexion = ConfiguracionDB.conectarConBaseDeDatos();
 		if(conexion == null){
 			return false;
 		}
 		try{
-			String ordensql = "DELETE FROM `carlosmilena_juegos` WHERE (`identificador` = ?);";
+			String ordensql = "DELETE FROM `carlosmilena_imagenes` WHERE (`idimagen` = ?);";
 			PreparedStatement pst = conexion.prepareStatement(ordensql);
-			pst.setString(1, idJuego);
+			pst.setString(1, idDeLaImagen);
 			int filasafectadas = pst.executeUpdate();
 			pst.close();
 			conexion.close();
@@ -93,23 +84,20 @@ public class JuegoDB{
 			return false;
 		}
 	}
+
 	//----------------------------------------------------------------------------------------------
-	public static boolean actualizarJuego(Juego juegoNew, String idJuegoOld){
+	public static boolean actualizarImagen(Imagen imagenNew, String idImagenOld){
 		Connection conexion = ConfiguracionDB.conectarConBaseDeDatos();
 		if(conexion == null){
 			return false;
 		}
 		try{
-			String ordensql = "UPDATE carlosmilena_juegos SET identificador = ?,plataforma = ?, " +
-							  "nombrejuego = ?, genero = ?, preciojuego = ? WHERE identificador =" +
-							  " ?";
+			String ordensql = "UPDATE carlosmilena_imagenes SET idimagen = ?, imagen = ? WHERE " +
+							  "idimagen = ?";
 			PreparedStatement pst = conexion.prepareStatement(ordensql);
-			pst.setString(1, juegoNew.getIdentificador());
-			pst.setString(2, juegoNew.getPlataforma());
-			pst.setString(3, juegoNew.getNombreJuego());
-			pst.setString(4, juegoNew.getGenero());
-			pst.setDouble(5, juegoNew.getPrecioJuego());
-			pst.setString(6, idJuegoOld);
+			pst.setString(1, imagenNew.getIdImagen());
+			pst.setString(2, imagenNew.getImagenEnBlob());
+			pst.setString(3, idImagenOld);
 			int filasAfectadas = pst.executeUpdate();
 			pst.close();
 			conexion.close();
@@ -122,5 +110,4 @@ public class JuegoDB{
 			return false;
 		}
 	}
-
 }
