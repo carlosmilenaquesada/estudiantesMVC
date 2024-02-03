@@ -9,8 +9,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.pm_mysql.ModificarJuegoActivity;
-import com.example.pm_mysql.clases.Juego;
+
+
+import es.joseljg.estudiantesmvc.activities.vistas.ModificarJuegoActivity;
+import es.joseljg.estudiantesmvc.clases.Juego;
 
 import es.joseljg.estudiantesmvc.utilidades.ImagenesBlobBitmap;
 import es.joseljg.estudiantesmvc.R;

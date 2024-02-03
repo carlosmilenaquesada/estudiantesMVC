@@ -69,6 +69,7 @@
                     android:paddingEnd="4dp"
                     android:singleLine="true"
                     android:text="@string/identificador"
+                    android:textColor="#000000"
                     android:textColorHint="#3E2723"
                     android:textSize="18sp" />
 
@@ -143,6 +144,7 @@
                 android:paddingEnd="4dp"
                 android:singleLine="true"
                 android:text="@string/nombre"
+                android:textColor="#000000"
                 android:textColorHint="#3E2723"
                 android:textSize="18sp" />
 
@@ -216,6 +218,7 @@
                 android:paddingEnd="4dp"
                 android:singleLine="true"
                 android:text="@string/precio"
+                android:textColor="#000000"
                 android:textColorHint="#3E2723"
                 android:textSize="18sp" />
 

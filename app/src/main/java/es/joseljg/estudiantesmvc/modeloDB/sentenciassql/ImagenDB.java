@@ -17,7 +17,7 @@ public class ImagenDB{
 		if(conexion == null){
 			return null;
 		}
-		Imagen imagen = new Imagen();
+		Imagen imagen =null;
 		try{
 			Statement sentencia = conexion.createStatement();
 			String ordenSQL = "SELECT * FROM carlosmilena_imagenes WHERE (`idimagen` = ?);";

@@ -52,12 +52,12 @@
         "source": "C:\\Users\\Administrador\\Desktop\\JDBC\\PROFESORJDBC\\estudiantesMVC\\estudiantesMVC\\app\\src\\main\\res\\layout\\activity_mostrar_catalogo.xml"
     },
     {
-        "merged": "C:\\Users\\Administrador\\Desktop\\JDBC\\PROFESORJDBC\\estudiantesMVC\\estudiantesMVC\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Administrador\\Desktop\\JDBC\\PROFESORJDBC\\estudiantesMVC\\estudiantesMVC\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
-    },
-    {
         "merged": "C:\\Users\\Administrador\\Desktop\\JDBC\\PROFESORJDBC\\estudiantesMVC\\estudiantesMVC\\app\\build\\intermediates\\merged_res\\debug\\drawable_wellplayedlogo.png.flat",
         "source": "C:\\Users\\Administrador\\Desktop\\JDBC\\PROFESORJDBC\\estudiantesMVC\\estudiantesMVC\\app\\src\\main\\res\\drawable\\wellplayedlogo.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrador\\Desktop\\JDBC\\PROFESORJDBC\\estudiantesMVC\\estudiantesMVC\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Administrador\\Desktop\\JDBC\\PROFESORJDBC\\estudiantesMVC\\estudiantesMVC\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
         "merged": "C:\\Users\\Administrador\\Desktop\\JDBC\\PROFESORJDBC\\estudiantesMVC\\estudiantesMVC\\app\\build\\intermediates\\merged_res\\debug\\drawable_imagen_no_disponible.png.flat",
@@ -68,16 +68,16 @@
         "source": "C:\\Users\\Administrador\\Desktop\\JDBC\\PROFESORJDBC\\estudiantesMVC\\estudiantesMVC\\app\\src\\main\\res\\layout\\spinner_desplegado.xml"
     },
     {
-        "merged": "C:\\Users\\Administrador\\Desktop\\JDBC\\PROFESORJDBC\\estudiantesMVC\\estudiantesMVC\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Administrador\\Desktop\\JDBC\\PROFESORJDBC\\estudiantesMVC\\estudiantesMVC\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
-    },
-    {
         "merged": "C:\\Users\\Administrador\\Desktop\\JDBC\\PROFESORJDBC\\estudiantesMVC\\estudiantesMVC\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_modificar_juego.xml.flat",
         "source": "C:\\Users\\Administrador\\Desktop\\JDBC\\PROFESORJDBC\\estudiantesMVC\\estudiantesMVC\\app\\src\\main\\res\\layout\\activity_modificar_juego.xml"
     },
     {
         "merged": "C:\\Users\\Administrador\\Desktop\\JDBC\\PROFESORJDBC\\estudiantesMVC\\estudiantesMVC\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_autenticacion.xml.flat",
         "source": "C:\\Users\\Administrador\\Desktop\\JDBC\\PROFESORJDBC\\estudiantesMVC\\estudiantesMVC\\app\\src\\main\\res\\layout\\activity_autenticacion.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrador\\Desktop\\JDBC\\PROFESORJDBC\\estudiantesMVC\\estudiantesMVC\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Administrador\\Desktop\\JDBC\\PROFESORJDBC\\estudiantesMVC\\estudiantesMVC\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\Administrador\\Desktop\\JDBC\\PROFESORJDBC\\estudiantesMVC\\estudiantesMVC\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_crear_cuenta.xml.flat",

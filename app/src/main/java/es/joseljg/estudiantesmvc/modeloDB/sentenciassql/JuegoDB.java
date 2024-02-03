@@ -19,7 +19,7 @@ public class JuegoDB{
 		if(conexion == null){
 			return null;
 		}
-		ArrayList<Juego> juegos = new ArrayList<Juego>();
+		ArrayList<Juego> juegos = new ArrayList<>();
 		try{
 			Statement sentencia = conexion.createStatement();
 			String ordenSQL = "SELECT * FROM carlosmilena_juegos ORDER BY identificador";
@@ -40,7 +40,7 @@ public class JuegoDB{
 			return juegos;
 		}catch(SQLException e){
 			Log.i("sql", "error sql");
-			return juegos;
+			return null;
 		}
 	}
 

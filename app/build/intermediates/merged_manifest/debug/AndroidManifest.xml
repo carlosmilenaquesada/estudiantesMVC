@@ -30,6 +30,12 @@
             android:name="es.joseljg.estudiantesmvc.activities.vistas.MenuGeneralActivity"
             android:exported="false" />
         <activity
+            android:name="es.joseljg.estudiantesmvc.activities.vistas.ModificarJuegoActivity"
+            android:exported="false" />
+        <activity
+            android:name="es.joseljg.estudiantesmvc.activities.vistas.MostrarCatalogoActivity"
+            android:exported="false" />
+        <activity
             android:name="es.joseljg.estudiantesmvc.activities.vistas.AutenticacionActivity"
             android:exported="true" >
             <intent-filter>

@@ -78,8 +78,9 @@ public class ModificarJuegoActivity extends AppCompatActivity implements Adapter
 		spModificarJuegoPlataforma = (Spinner) findViewById(R.id.spModificarJuegoPlataforma);
 		adapterPlataforma = new ArrayAdapter<>(this, R.layout.spinner_cerrado);
 		adapterPlataforma.setDropDownViewResource(R.layout.spinner_desplegado);
-		Herramientas.rellenarSpinnerConInfoBd(this, adapterPlataforma, "consolas", "nombreconsola"
-				, "/obtener-plataformas.php");
+		Herramientas.rellenarSpinnerConInfoBd(this, adapterPlataforma, "carlosmilena_consolas",
+				"nombreconsola"/*
+				, "/obtener-plataformas.php"*/);
 		spModificarJuegoPlataforma.setAdapter(adapterPlataforma);
 		spModificarJuegoPlataforma.setOnItemSelectedListener(this);
 		edtModificarNombreJuego = (EditText) findViewById(R.id.edtModificarJuegoNombreJuego);
@@ -91,8 +92,9 @@ public class ModificarJuegoActivity extends AppCompatActivity implements Adapter
 		spModificarGenero = (Spinner) findViewById(R.id.spModificarGenero);
 		adapterGenero = new ArrayAdapter<>(this, R.layout.spinner_cerrado);
 		adapterGenero.setDropDownViewResource(R.layout.spinner_desplegado);
-		Herramientas.rellenarSpinnerConInfoBd(this, adapterGenero, "generos", "nombregenero",
-				"/obtener-generos.php");
+		Herramientas.rellenarSpinnerConInfoBd(this, adapterGenero, "carlosmilena_generos",
+				"nombregenero"/*,
+				"/obtener-generos.php"*/);
 		spModificarGenero.setAdapter(adapterGenero);
 		spModificarGenero.setOnItemSelectedListener(this);
 		edtModificarPrecioVenta.setText(String.valueOf(juego.getPrecioJuego()));

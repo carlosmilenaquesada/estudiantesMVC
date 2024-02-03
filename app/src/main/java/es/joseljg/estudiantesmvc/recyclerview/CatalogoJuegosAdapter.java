@@ -10,25 +10,13 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
-import com.example.pm_mysql.clases.ConfiguracionDB;
-import com.example.pm_mysql.clases.Juego;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
-import es.joseljg.estudiantesmvc.utilidades.ImagenesBlobBitmap;
 import es.joseljg.estudiantesmvc.R;
+import es.joseljg.estudiantesmvc.clases.Imagen;
+import es.joseljg.estudiantesmvc.clases.Juego;
+import es.joseljg.estudiantesmvc.controladores.ImagenController;
+import es.joseljg.estudiantesmvc.utilidades.ImagenesBlobBitmap;
 
 public class CatalogoJuegosAdapter extends RecyclerView.Adapter<JuegoViewHolder>{
 	private final Context contexto;
@@ -70,11 +58,21 @@ public class CatalogoJuegosAdapter extends RecyclerView.Adapter<JuegoViewHolder>
 		holder.getTvItemGenero().setText(j.getGenero());
 		holder.getTvItemPrecioVenta().setText(String.valueOf(j.getPrecioJuego()));
 		String idimagen = j.getIdentificador();
-		descargarImagen(idimagen, holder.getIvItemImagen(), contexto);
+		descargarImagen(idimagen, holder.getIvItemImagen()/*, contexto*/);
 	}
 
-	private void descargarImagen(String idimagen, ImageView imageView, Context contexto){
-		StringRequest request = new StringRequest(Request.Method.POST,
+	private void descargarImagen(String idimagen, ImageView imageView/*, Context contexto*/){
+		//NUEVO
+		Imagen imagen = ImagenController.obtenerImagenController(idimagen);
+		if(imagen == null){
+			imageView.setImageResource(R.drawable.imagen_no_disponible);
+		}else{
+			byte[] fotobyte = ImagenesBlobBitmap.string_to_byte(imagen.getImagenEnBlob());
+			Bitmap fotobitmap = ImagenesBlobBitmap.bytes_to_bitmap(fotobyte, 500, 500);
+			imageView.setImageBitmap(fotobitmap);
+		}
+		//VIEJO
+		/*StringRequest request = new StringRequest(Request.Method.POST,
 				ConfiguracionDB.DIRECCION_URL_RAIZ +
 				"/mostrar-foto.php", new Response.Listener<String>(){
 			@Override
@@ -113,7 +111,7 @@ public class CatalogoJuegosAdapter extends RecyclerView.Adapter<JuegoViewHolder>
 			}
 		};
 		RequestQueue requestQueue = Volley.newRequestQueue(contexto);
-		requestQueue.add(request);
+		requestQueue.add(request);*/
 	}
 
 	@Override

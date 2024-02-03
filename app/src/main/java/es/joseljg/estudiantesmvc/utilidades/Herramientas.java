@@ -4,26 +4,25 @@ import android.content.Context;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
-import com.example.pm_mysql.clases.ConfiguracionDB;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.util.ArrayList;
 
+import es.joseljg.estudiantesmvc.controladores.StringArrayController;
+
 public class Herramientas{
-	public static void rellenarSpinnerConInfoBd(Context contexto, ArrayAdapter<String> adapter,
-												String nombreTablaDelContenidoDB,
-												String nombreColumnaContenidoDb,
-												String nombreArchivoPhp){
-		StringRequest request = new StringRequest(Request.Method.POST,
+	public static void rellenarSpinnerConInfoBd(Context contexto, ArrayAdapter<String> adapter
+			, String nombreTablaDelContenidoDB, String nombreColumnaContenidoDB/*,
+												String nombreArchivoPhp*/){
+		ArrayList<String> elementos =
+				StringArrayController.obtenerStringArrayController(nombreTablaDelContenidoDB,
+						nombreColumnaContenidoDB);
+
+		if(elementos == null){
+			Toast.makeText(contexto, "Los valores de " +nombreTablaDelContenidoDB + " no se han podido cargar", Toast.LENGTH_SHORT).show();
+			return;
+		}
+		adapter.addAll(elementos);
+		adapter.notifyDataSetChanged();
+		/*StringRequest request = new StringRequest(Request.Method.POST,
 				ConfiguracionDB.DIRECCION_URL_RAIZ +
 				nombreArchivoPhp, new Response.Listener<String>(){
 			@Override
@@ -37,7 +36,7 @@ public class Herramientas{
 					if(exito.equals("1")){
 						for(int i = 0; i < jsonArray.length(); i++){
 							JSONObject object = jsonArray.getJSONObject(i);
-							String contenidoColumna = object.getString(nombreColumnaContenidoDb);
+							String contenidoColumna = object.getString(nombreColumnaContenidoDB);
 							listaValores.add(contenidoColumna);
 						}
 						adapter.addAll(listaValores);
@@ -55,6 +54,6 @@ public class Herramientas{
 		}){
 		};
 		RequestQueue requestQueue = Volley.newRequestQueue(contexto);
-		requestQueue.add(request);
+		requestQueue.add(request);*/
 	}
 }

@@ -56,6 +56,7 @@ public class AutenticacionActivity extends AppCompatActivity{
 		}
 		//NUEVO
 		Usuario usuario = UsuarioController.obtenerUsuarioController(email, password);
+
 		if(usuario == null){
 			Toast.makeText(AutenticacionActivity.this, "Usuario o password incorrectos",
 					Toast.LENGTH_LONG).show();

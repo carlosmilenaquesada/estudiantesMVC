@@ -1,34 +1,28 @@
 package es.joseljg.estudiantesmvc.activities.vistas;
 
+
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
-import com.example.pm_mysql.clases.ConfiguracionDB;
-import com.example.pm_mysql.clases.Juego;
-import com.example.pm_mysql.recyclerview.CatalogoJuegosAdapter;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.util.ArrayList;
+import es.joseljg.estudiantesmvc.R;
+import es.joseljg.estudiantesmvc.clases.Juego;
+import es.joseljg.estudiantesmvc.controladores.JuegoController;
+import es.joseljg.estudiantesmvc.recyclerview.CatalogoJuegosAdapter;
 
 public class MostrarCatalogoActivity extends AppCompatActivity{
 	public ArrayList<Juego> juegos;
@@ -48,6 +42,7 @@ public class MostrarCatalogoActivity extends AppCompatActivity{
 			startActivity(new Intent(getApplicationContext(), AutenticacionActivity.class));
 		}
 	}
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
@@ -69,7 +64,17 @@ public class MostrarCatalogoActivity extends AppCompatActivity{
 	}
 
 	public void mostrarProductos(){
-		StringRequest request = new StringRequest(Request.Method.POST,
+		//NUEVO
+		juegos = JuegoController.obtenerJuegosController();
+		if(juegos == null){
+			Toast.makeText(MostrarCatalogoActivity.this, "Error al obtener los juegos",
+					Toast.LENGTH_SHORT).show();
+			return;
+		}
+		adapter.setJuegos(juegos);
+		adapter.notifyDataSetChanged();
+		//VIEJO
+		/*StringRequest request = new StringRequest(Request.Method.POST,
 				ConfiguracionDB.DIRECCION_URL_RAIZ +
 				"/mostrar.php", new Response.Listener<String>(){
 			@Override
@@ -107,12 +112,24 @@ public class MostrarCatalogoActivity extends AppCompatActivity{
 		}){
 		};
 		RequestQueue requestQueue = Volley.newRequestQueue(MostrarCatalogoActivity.this);
-		requestQueue.add(request);
+		requestQueue.add(request);*/
 	}
 
+	@RequiresApi(api = Build.VERSION_CODES.N)
 	public void buscarJuego(View view){
 		String texto = String.valueOf(etBuscarJuego.getText());
-		StringRequest request = new StringRequest(Request.Method.POST,
+		//NUEVO
+		juegos = JuegoController.obtenerJuegosController();
+		if(juegos == null){
+			Toast.makeText(MostrarCatalogoActivity.this, "Error al obtener los juegos",
+					Toast.LENGTH_SHORT).show();
+			return;
+		}
+		juegos.removeIf(juego -> !juego.getNombreJuego().contains(texto));
+		adapter.setJuegos(juegos);
+		adapter.notifyDataSetChanged();
+		//VIEJO
+		/*StringRequest request = new StringRequest(Request.Method.POST,
 				ConfiguracionDB.DIRECCION_URL_RAIZ +
 				"/mostrar.php", new Response.Listener<String>(){
 			@Override
@@ -130,8 +147,8 @@ public class MostrarCatalogoActivity extends AppCompatActivity{
 								String identificador = object.getString("identificador");
 								String plataforma = object.getString("plataforma");
 								String genero = object.getString("genero");
-								double preciojuego = Double.parseDouble(object.getString("preciojuego"
-								));
+								double preciojuego = Double.parseDouble(object.getString(
+										"preciojuego"));
 								Juego juego = new Juego(identificador, plataforma, nombrejuego,
 										genero, preciojuego);
 								juegos.add(juego);
@@ -153,7 +170,7 @@ public class MostrarCatalogoActivity extends AppCompatActivity{
 		}){
 		};
 		RequestQueue requestQueue = Volley.newRequestQueue(MostrarCatalogoActivity.this);
-		requestQueue.add(request);
+		requestQueue.add(request);*/
 	}
 
 	public void volver(View view){

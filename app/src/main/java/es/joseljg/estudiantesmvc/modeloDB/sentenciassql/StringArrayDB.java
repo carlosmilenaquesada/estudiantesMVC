@@ -38,7 +38,7 @@ public class StringArrayDB{
 			return elementos;
 		}catch(SQLException e){
 			Log.i("sql", "error sql");
-			return elementos;
+			return null;
 		}
 	}
 }

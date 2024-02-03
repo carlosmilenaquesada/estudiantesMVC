@@ -24,6 +24,7 @@ public class UsuarioController{
 		try{
 			// Especifica un tiempo de espera razonable (por ejemplo, 5 segundos)
 			usuario = (Usuario) t.get(5000, TimeUnit.MILLISECONDS);
+
 		}catch(ExecutionException e){
 			// Maneja la excepción de ejecución
 			e.printStackTrace();

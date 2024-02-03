@@ -65,15 +65,15 @@ public class AgregarNuevoJuegoActivity extends AppCompatActivity{
 		spNuevoPlataforma = (Spinner) findViewById(R.id.spNuevoPlataforma);
 		adapterPlataforma = new ArrayAdapter<>(this, R.layout.spinner_cerrado);
 		adapterPlataforma.setDropDownViewResource(R.layout.spinner_desplegado);
-		Herramientas.rellenarSpinnerConInfoBd(this, adapterPlataforma, "consolas", "nombreconsola"
-				, "/obtener-plataformas.php");
+		Herramientas.rellenarSpinnerConInfoBd(this, adapterPlataforma, "carlosmilena_consolas", "nombreconsola"/*
+				, "/obtener-plataformas.php"*/);
 		spNuevoPlataforma.setAdapter(adapterPlataforma);
 		/*configuro el adapter del spinner de género con información de la base de datos*/
 		spNuevoGenero = (Spinner) findViewById(R.id.spNuevoGenero);
 		adapterGenero = new ArrayAdapter<>(this, R.layout.spinner_cerrado);
 		adapterGenero.setDropDownViewResource(R.layout.spinner_desplegado);
-		Herramientas.rellenarSpinnerConInfoBd(this, adapterGenero, "generos", "nombregenero",
-				"/obtener-generos.php");
+		Herramientas.rellenarSpinnerConInfoBd(this, adapterGenero, "carlosmilena_generos", "nombregenero"/*,
+				"/obtener-generos.php"*/);
 		spNuevoGenero.setAdapter(adapterGenero);
 	}
 

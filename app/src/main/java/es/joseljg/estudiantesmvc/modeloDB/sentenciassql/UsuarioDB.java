@@ -20,22 +20,23 @@ public class UsuarioDB{
 		Usuario usuario = null;
 		try{
 			Statement sentencia = conexion.createStatement();
-			String ordenSQL = "SELECT * FROM carlosmilena_usuarios WHERE ('email' = ?  AND 'password' = ?);";
-			PreparedStatement pst = conexion.prepareStatement(ordenSQL);
-			pst.setString(1, emailUsuario);
-			pst.setString(2, passwordUsuario);
+			String ordenSQL =
+					"SELECT * FROM carlosmilena_usuarios WHERE email = '" + emailUsuario +
+							  "' AND password = '" + passwordUsuario + "'";
+
 			ResultSet resultado = sentencia.executeQuery(ordenSQL);
 			if(resultado.next()){
 				String email = resultado.getString("email");
 				String password = resultado.getString("password");
 				usuario = new Usuario(email, password);
+				System.out.println("hay resultado");
 			}
 			resultado.close();
 			sentencia.close();
 			conexion.close();
 			return usuario;
 		}catch(SQLException e){
-			Log.i("sql", "error sql");
+			Log.i("sql", "error sql" + e.getMessage());
 			return usuario;
 		}
 	}

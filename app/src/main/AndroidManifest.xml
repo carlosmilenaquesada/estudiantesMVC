@@ -24,6 +24,10 @@
             android:name=".activities.vistas.ModificarJuegoActivity"
             android:exported="false" />
         <activity
+            android:name=".activities.vistas.MostrarCatalogoActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".activities.vistas.AutenticacionActivity"
             android:exported="true">
             <intent-filter>
